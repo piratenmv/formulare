@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Antrag an den Landesvorstand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+  <link href="assets/css/form_style.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<form method="post" action="forms/vorstand.php" id="contact-form">
+
+			<div class="row-fluid">
+
+				<div class="span9">
+
+					<div class="page-header">
+						<h1>Antrag an den Landesvorstand</h1>
+					</div>
+
+					<p class="lead">Über dieses Formular kannst du einen Antrag an den <a href="http://vorstand.piratenpartei-mv.de/">Vorstand des Landesverbandes Mecklenburg-Vorpommern</a> stellen. Der Antrag wird nach Möglichkeit bei der nächsten Vorstandssitzung behandelt.</p>
+
+					<fieldset>
+					  <legend>Antragsteller</legend>
+						
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_name">Name</label>
+						<div class="controls">
+							<input type="text" name="name" id="form_name" class="input-xxlarge" placeholder="Max Musterpirat">
+							<span class="help-block">
+								<p>Gib bitte deinen vollständigen Namen (keine Nicknames oder Pseudonyme) an, damit unser <a href="http://vorstand.piratenpartei-mv.de/vorstandsmitglieder/generalsekretar">Generalsekretär</a> überprüfen kann, ob du antragsberechtigt bist.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_email">E-Mail-Adresse</label>
+						<div class="controls">
+							<input type="text" name="email" id="form_email" class="input-xxlarge" placeholder="m.musterpirat@provider.net">
+							<span class="help-block">
+								<p>Wir benötigen deine E-Mail-Adresse, damit wir uns bei Rückfragen bei dir melden können. Außerdem halten wir dich über diese Adresse über deinen Antrag auf dem Laufenden.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_reason">Antragsberechtigung</label>
+						<div class="controls">
+							<select name="reason" id="form_reason" class="input-xxlarge">
+								<option value="">(bitte auswählen)</option>
+								<option>Bürger oder Bewohner des Landes Mecklenburg-Vorpommern</option>
+								<option>Mitglied des Landesverbandes Mecklenburg-Vorpommern</option>
+								<option>Vorstand und den Vorstandsmitgliedern des Bundesverbands der Piratenpartei Deutschland</option>
+								<option>Vorstand eines anderen Landesverbandes der Piratenpartei Deutschland</option>
+								<option>Vorstand der Jungen Piraten Deutschland</option>
+								<option>Organ der des Landesverband Mecklenburg-Vorpommern oder dessen nachgeordneten Gebietsverbände</option>
+							</select>
+							<span class="help-block">
+								<p>Die Antragsberechtigung ist in § 3 Absatz 8 <a href="http://vorstand.piratenpartei-mv.de/dokumente/geschaeftsordnung/">Geschäftsordnung des Vorstandes</a> geregelt:</p>
+								<p>Anträge an den Vorstand können gestellt werden von</p>
+								<ul>
+									<li>jedem Bürger oder Bewohner des Landes Mecklenburg-Vorpommern</li>
+									<li>jedem Mitglied des Landesverbandes Mecklenburg-Vorpommern,</li>
+									<li>dem Vorstand und den Vorstandsmitgliedern des Bundesverbands der Piratenpartei Deutschland</li>
+									<li>den Vorständen anderer Landesverbände der Piratenpartei Deutschland,</li>
+									<li>den Vorständen der Jungen Piraten Deutschland,</li>
+									<li>den Organen der Piratenpartei Deutschland Landesverband Mecklenburg-Vorpommern und dessen nachgeordneten Gebietsverbänden.</li>
+								</ul>
+								<p>Bitte wähle den Punkt aus, der für die zutrifft.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_comment">Kommentar</label>
+						<div class="controls">
+							<input type="text" name="comment" id="form_comment" placeholder="Ich bin seit 2005 Mitglied im Landesverband (Mitgliedsnummer 4711)." class="input-xxlarge">
+							<span class="help-block">
+								<p>Bitte nutze das Kommentarfeld, um uns deine Antragsberechtigung glaubhaft zu machen.</p>
+							</span>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+				  <legend>Antrag</legend>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_title">Titel</label>
+						<div class="controls">
+							<input type="text" name="title" id="form_title" placeholder="Kostenloses Eis auf Landesmitgliederversammlungen" class="input-xxlarge">
+							<span class="help-block">
+								<p>Gib deinem Antrag einen kurzen und prägnanten Titel, der in der Tagesordnung und auch auf Twitter benutzt werden kann. Du musst nicht „Antrag“ vor den Titel schreiben oder den Titel in Anführungszeichen schreiben.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_text">Antragstext</label>
+						<div class="controls">
+							<textarea rows="10" class="input-xxlarge" placeholder="Auf Landesmitgliederversammlungen soll zahlenden Mitgliedern bei der Akkreditierung kostenlos ein Speiseeis übergeben werden." name="text" id="form_text"></textarea>
+							<span class="help-block">
+								<p>Bitte beschreibe klar und verständlich, was der Landesvorstand beschließen soll. Nach § 13 Absatz 1 <a href="http://wiki.piratenpartei.de/MV:Wahlordnung">Wahlordnung</a> muss ein Antrag so gestellt werden, dass er mit „Ja“ oder „Nein“ abgestimmt werden kann.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_description">Begründung</label>
+						<div class="controls">
+							<textarea rows="10" name="description" id="form_description" class="input-xxlarge" placeholder="Bei langen Versammlungen lässt die Konzentration zwangsläufig nach einigen Stunden nach. Ein Speiseeis kann den Blutzuckerspiegel heben und so den Konzentrationsmangel effektiv bekämpfen."></textarea>
+							<span class="help-block">
+								<p>Bitte gib hier eine Begründung für deinen Antrag an. Diese Begründung ist nicht Teil des Antrages, sondern soll eine Diskussionsgrundlage für die Abstimmung geben.</p>
+							</span>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+				  <legend>Umsetzung</legend>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_delegation">Verantwortlich</label>
+						<div class="controls">
+							<input type="text" name="delegation" id="form_delegation" placeholder="Vroni Vorstandspiratin" class="input-xxlarge">
+							<span class="help-block">
+								<p>Nach § 3 Absatz 2 <a href="http://vorstand.piratenpartei-mv.de/dokumente/geschaeftsordnung/">Geschäftsordnung des Vorstandes</a> muss für jeden Beschluss ein oder mehrere Zuständige angegeben werden. Du kannst hier Vorschläge dazu machen. Bitte beachte dabei auch die Übersicht der <a href="http://vorstand.piratenpartei-mv.de/zustaendigkeit/">Zuständigkeiten innerhalb des Landesverbandes</a>.</p>
+							</span>
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary"><i class="icon-envelope icon-white"></i> Antrag stellen</button>
+					<button type="reset" class="btn"><i class="icon-repeat"></i> Formular zurücksetzen</button>
+					<div style="margin-top: 2em">
+						<p><strong>Datenschutzhinweis: </strong>Die Formulardaten werden per E-Mail an den Landesvorstand geschickt und nach der Überprüfung in das <a href="https://redmine.piratenpartei-mv.de/projects/vorstand">Redmine-System</a> des Landesverbandes übertragen. Anträge, die personenbezogene Daten enthalten, werden nicht veröffentlicht. Falls du Fragen zum Datenschutz hast, kannst du dich an den <a href="http://wiki.piratenpartei.de/MV:Datenschutzbeauftragter">Datenschutzbeauftragten</a> wenden.</p>
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+  <script src="assets/js/jquery-1.7.1.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="vorstand.js"></script>
+		
+</body>
+
+</html>
