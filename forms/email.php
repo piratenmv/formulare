@@ -26,7 +26,20 @@ Begründung:
 
 ----
 
-Ich akzeptiere die Benutzungsrichtlinien von offiziellen E-Mail-Adressen (http://wiki.piratenpartei.de/MV:Mailrichtlinien#Benutzungsrichtlinien).
+Ich akzeptiere folgende Benutzungsrichtlinien von offiziellen E-Mail-Adressen:
+
+Benutzungsrichtlinien von offiziellen E-Mail-Adressen
+=====================================================
+
+1. Die Piratenpartei Mecklenburg Vorpommern stellt den Vorstandsmitglieder und den Mitgliedern der Organe des Landesverbandes oder der Untergliederungen kostenlos eine persönliche E-Mail-Adresse zur Verfügung, die für die offizielle Kommunikation im Rahmen der Tätigkeiten innerhalb der Piratenpartei Deutschland benutzt wird. Die E-Mail-Adresse setzt sich aus dem persönlichen Vor- und Nachnamen (vorname.nachname@piraten-mv.de) zusammen.
+
+2. Generell besteht kein Anspruch auf die ständige Verfügbarkeit von E-Mail über den Dienst des Landesverbandes. Sollte der Dienst aus Gründen, welche die Administration des Landesverbandes nicht zu vertreten haben oder aus wartungstechnischen Gründen nicht oder nicht mit dem vollen Leistungsumfang verfügbar sein, so haftet der Landesverband Mecklenburg-Vorpommern nicht für Schäden oder Folgeschäden, die einem Benutzer daraus entstehen können. Im Falle eines Systemausfalls besteht kein Anspruch auf Rücksicherung. Der Nutzer stellt dens Landesverband Mecklenburg-Vorpommern von jeglicher Haftung für die von ihm übermittelten Inhalte frei.
+
+3. Du kannst jederzeit die Nutzung der persönlichen E-Mail-Adresse durch eine Mitteilung per E-Mail an support@piraten-mv.de beenden. Der Vorstand der Piratenpartei Mecklenburg-Vorpommern ist berechtigt, die Nutzung der Adresse aus wichtigem Grund zu sperren. Wichtige Gründe für das Sperren der Zugangsberechtigung sind insbesondere ein Verstoß gegen die Ziffer 4 dieser Benutzungsrichtlinien.
+
+4. Du verpflichtest dich, die E-Mail-Adresse ausschließlich für Kommunikation zu nutzen, welche im Einklang mit den Grundsätzen oder der Satzung der Piratenpartei Deutschlands und des Landesverbandes Mecklenburg-Vorpommern steht. Die E-Mail-Adresse ist ausschließlich für den Einsatz im Rahmen der Tätigkeit für und im Sinne der Piratenpartei vorgesehen. Jegliche Nutzung für rein private Zwecke ist nicht gestattet. Bekanntgewordene Verstöße werden dem Landesvorstand gemeldet. Die Administration hat im Sinne des Vorstandes des Landesverbandes zu handeln.
+
+5. Die Administration unterliegt den einschlägigen Datenschutzbestimmungen und hat sämtliche, im Zusammenhang mit ihrer Tätigkeit bekannt gewordenen, persönlichen Daten vertraulich zu behandeln. Dies gilt auch über den Zeitraum der Tätigkeit für die Administration des Landesverbandes Mecklenburg-Vorpommern der Piratenpartei Deutschland hinaus. Die Administratoren wurden darüber in Kenntnis gesetzt, was mit der Unterzeichnung einer Geheimhaltungsvereinbarung zu dokumentieren ist.
 
 Beste Grüße,
 %s

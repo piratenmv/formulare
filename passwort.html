@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Zugangsantrag zu einem gemeinsam genutzen Dienst</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+  <link href="assets/css/form_style.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<form method="post" action="forms/passwort.php" id="contact-form">
+
+			<div class="row-fluid">
+
+				<div class="span9">
+
+					<div class="page-header">
+						<h1>Zugangsantrag zu einem gemeinsam genutzen Dienst</h1>
+					</div>
+
+					<p class="lead">Über dieses Formular kannst du den Zugriff auf einen gemeinsam genutzten Dienst der IT des Landesverbandes Mecklenburg-Vorpommern stellen.</p>
+
+					<fieldset>
+					  <legend>Antragsteller</legend>
+						
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_name">Name</label>
+						<div class="controls">
+							<input type="text" name="name" id="form_name" class="input-xxlarge" placeholder="Max Musterpirat">
+							<span class="help-block">
+								<p>Gib bitte deinen vollständigen Namen an. Wir werden keine Zugänge an Nicknames oder Pseudonyme ausgeben.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_email">E-Mail-Adresse</label>
+						<div class="controls">
+							<input type="text" name="email" id="form_email" class="input-xxlarge" placeholder="m.musterpirat@provider.net">
+							<span class="help-block">
+								<p>Wir benötigen deine E-Mail-Adresse, damit wir dir die Zugangsbeschreibung zukommen lassen können und uns bei Rückfragen bei dir melden können.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_mobile">Mobilfunknummer</label>
+						<div class="controls">
+							<input type="text" name="mobile" id="form_mobile" class="input-xxlarge" placeholder="01765551234">
+							<span class="help-block">
+								<p>Wir werden dir das Zugangspasswort nicht einfach per E-Mail schicken, sondern es verschlüsselt hinterlegen. Den Schlüssel werden wir die per SMS zuschicken. So wird die Möglichkeit eines unerlaubten Zugangs von Dritten minimiert.</p>
+							</span>
+						</div>
+					</div>
+
+				</fieldset>
+
+				<fieldset>
+				  <legend>Antrag</legend>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_service">Dienst</label>
+						<div class="controls">
+							<select name="service" id="form_service" class="input-xxlarge">
+								<option value="">(bitte auswählen)</option>
+								<option>GitHub</option>
+								<option>Google Calendar</option>
+								<option>Icecast</option>
+								<option>Sipgate</option>
+								<option>Slideshare</option>
+								<option>Soundcloud</option>
+								<option>Twitter (@Piraten_MV)</option>
+								<option>Twitter (@Piraten_MV_lavo)</option>
+								<option>Twitter (@PiratenRostock)</option>
+								<option>YouTube</option>
+							</select>
+							<span class="help-block">
+								<p>Bitte wähle den Dienst aus, zu dem du Zugriff beantragen möchtest. Bitte beachte, dass jeder Dienst einzeln beantragt werden muss.</p>
+							</span>
+						</div>
+					</div>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_description">Begründung</label>
+						<div class="controls">
+							<textarea rows="10" name="description" id="form_description" class="input-xxlarge" placeholder="Als Sprecher der AG Weltraumpolitik ist der Zugang zur landesweiten MySpace-Seite unerlässlich."></textarea>
+							<span class="help-block">
+								<p>Bitte gib hier eine Begründung für deinen Antrag an. Bitte habe Verständnis, dass wir Zugänge nicht einfach aufgrund von „Interesse“ verteilen und dass du mit als Zugangsinhaber eine gewisse Verantwortung eingehst.</p>
+							</span>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+				  <legend>Nutzungsbedingungen zum Umgang mit Passworten</legend>
+
+					<div class="control-group form-horizontal">
+						<label class="control-label" for="form_description">Nutzungsbedingungen</label>
+						<div class="controls">
+<div class="well well-small">
+							<p>Im Folgenden bezeichnet „Dienst“ den von dir beantragten Dienst.</p>
+					<p>
+					<ol>
+					<li><p>Du wirst sorgsam mit dem Passwort umgehen. Du wirst es nicht zusammen mit dem Nutzernamen aufschreiben oder speichern. Falls du Zweifel hast, ob ein Dritter Kenntnis von dem Passwort erlangt hat, meldest du dich umgehend bei <a href="mailto:support@piraten-mv.de">support@piraten-mv.de</a>.</p></li>
+					<li><p>Du wirst das Passwort an niemanden weitergeben. Falls du der Meinung bist, dass es eine gute Idee ist, dass auch eine andere Person Zugriff zu dem Dienst erhält, dann schreib bitte eine E-Mail an <a href="mailto:support@piraten-mv.de">support@piraten-mv.de</a>.</p></li>
+					<li><p>Du wirst das Passwort nicht ändern. Es handelt sich um einen Zugang, den du dir mit anderen Personen teilst. Diese Personen würden den Zugriff zum Dienst nach einer Passwortänderung verlieren. Falls du der Meinung bist, dass es eine gute Idee ist, dass das Passwort geändert werden sollte, dann schreib bitte eine E-Mail an <a href="mailto:support@piraten-mv.de">support@piraten-mv.de</a>.</p></li>
+					<li><p>Du wirst uns per E-Mail an <a href="mailto:support@piraten-mv.de">support@piraten-mv.de</a> Bescheid geben, wenn du den Zugang zum Dienst nicht mehr nutzt. Du wirst dann auch das Passwort den von dir genutzten Anwendungen entfernen, die das Passwort für den Zugang zu dem Dienst speichern.</li>
+					<li><p>Dein Name, deine E-Mail-Adresse und deine Mobilfunknummer werden zusammen mit dem heutigen Datum und dem Namen des Dienstes gespeichert, damit wir nachvollziehen können, wer wann Zugriff erhalten hat.</p></li>
+					</ol>
+				</p></div>
+			</div>
+		</div>
+
+					<div class="control-group form-horizontal">
+						<div class="controls">
+						<label class="checkbox" for="form_accept">
+						    <input name="accept" class="checkbox" type="checkbox" id="form_accept"> Ich akzeptiere die Nutzungsbedingungen zum Umgang mit Passworten.
+						  </label>
+					</div>
+				</div>
+				</fieldset>
+
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary"><i class="icon-envelope icon-white"></i> Antrag stellen</button>
+					<button type="reset" class="btn"><i class="icon-repeat"></i> Formular zurücksetzen</button>
+					<div style="margin-top: 2em">
+						<p><strong>Datenschutzhinweis: </strong>Die Formulardaten werden per E-Mail an den Landesvorstand geschickt und bei Annahme gespeichert. Alle in diesen Prozess eingebundenen Personen sind auf die Einhaltung der entsprechenden Datenschutzrichtlinien verpflichtet. Falls du Fragen zum Datenschutz hast, kannst du dich an den <a href="http://wiki.piratenpartei.de/MV:Datenschutzbeauftragter">Datenschutzbeauftragten</a> wenden.</p>
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+  <script src="assets/js/jquery-1.7.1.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="passwort.js"></script>
+		
+</body>
+
+</html>
