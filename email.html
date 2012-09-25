@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Antrag auf eine offizielle E-Mail-Adresse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<link href="assets/css/form_style.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<form method="post" action="forms/email.php" id="contact-form">
+
+				<div class="row-fluid">
+
+					<div class="span9">
+
+						<div class="page-header">
+							<h1>Antrag auf eine offizielle E-Mail-Adresse</h1>
+						</div>
+
+						<p class="lead">Über dieses Formular kannst du eine offizielle E-Mail-Adresse der Form <i>vorname.nachname@piraten-mv.de</i> beantragen.</p>
+
+						<fieldset>
+							<legend>Antragsteller</legend>
+						
+							<div class="control-group form-horizontal">
+								<label class="control-label" for="form_name">Name</label>
+								<div class="controls">
+									<input type="text" name="name" id="form_name" class="input-xxlarge" placeholder="Max Musterpirat">
+									<span class="help-block">
+										<p>Gib bitte deinen vollständigen Namen an. Wir werden Anträge von Nicknames oder Pseudonymen bearbeiten.</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="control-group form-horizontal">
+								<label class="control-label" for="form_email">aktuelle E-Mail-Adresse</label>
+								<div class="controls">
+									<input type="text" name="email" id="form_email" class="input-xxlarge" placeholder="m.musterpirat@provider.net">
+									<span class="help-block">
+										<p>Wir benötigen deine E-Mail-Adresse, damit wir dir die Zugangsbeschreibung zukommen lassen können und uns bei Rückfragen bei dir melden können.</p>
+									</span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Antrag</legend>
+
+							<div class="control-group form-horizontal">
+								<label class="control-label" for="form_wished_email">beantragte E-Mail-Adresse</label>
+								<div class="controls">
+									<div class="input-append">
+										<input id="form_wished_email" class="input-large" placeholder="max.musterpirat" type="text" name="wished_email" style="text-align :right;">
+										<span class="add-on">@piraten-mv.de</span>
+									</div>
+									<span class="help-block" style="padding-top: 0.5em">
+										<p>Du kannst eine E-Mail-Adresse der Form <i>vorname.nachname</i>@piraten-mv.de beantragen Wir werden keine E-Mail-Adressen auf Pseudonyme oder Nicknames vergeben. Wenn du eine Rollen-E-Mail-Adresse (z.B. kv-gehlsdorf@piraten-mv.de) beantragen möchtest, wende dich bitte direkt an <a href="mailto::support@piraten-mv.de">support@piraten-mv.de</a>. In diesem Fall werden wir eine Queue in unserem OTRS-Helpdesk einrichten.</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="control-group form-horizontal">
+								<label class="control-label" for="form_reason">Antragsgrundlage</label>
+								<div class="controls">
+									<select name="reason" id="form_reason" class="input-xxlarge">
+										<option value="">(bitte auswählen)</option>
+										<option>Vorstandsmitglied im Landesverband oder einer Untergliederung</option>
+										<option>Mitglied in einem Organ des Landesverbandes oder einer Untergliederung</option>
+										<option value="Mitglied des Landesverbandes">Mitglied des Landesverbandes (bitte unten eine Begründung angeben)</option>
+									</select>
+									<span class="help-block">
+										<p>Gemäß <a href="http://wiki.piratenpartei.de/MV:Mailrichtlinien#Vergaberichtlinie">Vergaberichtline</a> haben lediglich Vorstandsmitglieder und Mitglieder der Organe des Landesverbandes Anspruch auf eine offizielle E-Mail-Adresse. Weitere Mitglieder des Landesverbandes müssen die Adresse begründet beim Landesvorstand beantragen.
+										</p>
+									</span>
+								</div>
+							</div>
+
+							<div class="control-group form-horizontal">
+								<label class="control-label" for="form_description">Begründung</label>
+								<div class="controls">
+									<textarea rows="10" name="description" id="form_description" class="input-xxlarge" placeholder="Als Sprecher des Stammtisches Gehlsdorf bin ich in vielen Arbeitsgemeinschaften aktiv, in denen ich gerne offiziell als Pirat aus Mecklenburg-Vorpommern auftreten möchte."></textarea>
+									<span class="help-block">
+										<p>Bitte gib hier die Begründung für deinen Antrag an. Gemäß <a href="http://wiki.piratenpartei.de/MV:Mailrichtlinien#Vergaberichtlinie">Vergaberichtline</a> werden wir nur E-Mail-Adressen an Mitglieder vergeben, bei denen die E-Mail-Adresse eine direkte Abhängigkeit für die offizielle Arbeit im Landesverband ist. Wenn es dir nur darum geht, unter einer anderen Adresse E-Mails zu empfangen, empfehlem wir die Einrichtung eines kostenlosen Accounts bei den üblichen Verdächtigen wie <a href="http://service.gmx.net/de/cgi/g.fcgi/products/mail/overview">GMX</a>, <a href="https://registrierung.web.de">web.de</a> oder <a href="https://accounts.google.com/SignUp?service=mail">Google Mail</a>.</p>
+									</span>
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Benutzungsrichtlinien von offiziellen E-Mail-Adressen</legend>
+
+							<div class="control-group form-horizontal">
+								<label class="control-label" for="form_description">Benutzungsrichtlinien</label>
+								<div class="controls">
+									<div class="well well-small">
+										<ol>
+											<li>
+												<p>Die Piratenpartei Mecklenburg Vorpommern stellt den Vorstandsmitglieder und den Mitgliedern der Organe des Landesverbandes oder der Untergliederungen kostenlos eine persönliche E-Mail-Adresse zur Verfügung, die für die offizielle Kommunikation im Rahmen der Tätigkeiten innerhalb der Piratenpartei Deutschland benutzt wird. Die E-Mail-Adresse setzt sich aus dem persönlichen Vor- und Nachnamen (<i>vorname.nachname</i>@piraten-mv.de) zusammen.</p>
+											</lu>
+											<li>
+												<p>Generell besteht kein Anspruch auf die ständige Verfügbarkeit von E-Mail über den Dienst des Landesverbandes. Sollte der Dienst aus Gründen, welche die Administration des Landesverbandes nicht zu vertreten haben oder aus wartungstechnischen Gründen nicht oder nicht mit dem vollen Leistungsumfang verfügbar sein, so haftet der Landesverband Mecklenburg-Vorpommern nicht für Schäden oder Folgeschäden, die einem Benutzer daraus entstehen können. Im Falle eines Systemausfalls besteht kein Anspruch auf Rücksicherung. Der Nutzer stellt dens Landesverband Mecklenburg-Vorpommern von jeglicher Haftung für die von ihm übermittelten Inhalte frei.</p>
+											</li>
+											<li>
+												<p>Du kannst jederzeit die Nutzung der persönlichen E-Mail-Adresse durch eine Mitteilung per E-Mail an <a href="mailto:support@piraten-mv.de">support@piraten-mv.de</a> beenden. Der Vorstand der Piratenpartei Mecklenburg-Vorpommern ist berechtigt, die Nutzung der Adresse aus wichtigem Grund zu sperren. Wichtige Gründe für das Sperren der Zugangsberechtigung sind insbesondere ein Verstoß gegen die Ziffer 4 dieser Benutzungsrichtlinien.</p>
+											</li>
+											<li>
+												<p>Du verpflichtest dich, die E-Mail-Adresse ausschließlich für Kommunikation zu nutzen, welche im Einklang mit den Grundsätzen oder der Satzung der Piratenpartei Deutschlands und des Landesverbandes Mecklenburg-Vorpommern steht. Die E-Mail-Adresse ist ausschließlich für den Einsatz im Rahmen der Tätigkeit für und im Sinne der Piratenpartei vorgesehen. Jegliche Nutzung für rein private Zwecke ist nicht gestattet. Bekanntgewordene Verstöße werden dem Landesvorstand gemeldet. Die Administration hat im Sinne des Vorstandes des Landesverbandes zu handeln.</p>
+											</li>
+											<li>
+												<p>Die Administration unterliegt den einschlägigen Datenschutzbestimmungen und hat sämtliche, im Zusammenhang mit ihrer Tätigkeit bekannt gewordenen, persönlichen Daten vertraulich zu behandeln. Dies gilt auch über den Zeitraum der Tätigkeit für die Administration des Landesverbandes Mecklenburg-Vorpommern der Piratenpartei Deutschland hinaus. Die Administratoren wurden darüber in Kenntnis gesetzt, was mit der Unterzeichnung einer Geheimhaltungsvereinbarung zu dokumentieren ist.</p>
+											</li>
+										</ol>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<div class="controls">
+								<label class="checkbox" for="form_accept">
+									<input name="accept" class="checkbox" type="checkbox" id="form_accept"> Ich akzeptiere die Benutzungsrichtlinien von offiziellen E-Mail-Adressen.
+								</label>
+							</div>
+						</div>
+					</fieldset>
+
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary"><i class="icon-envelope icon-white"></i> Antrag stellen</button>
+						<button type="reset" class="btn"><i class="icon-repeat"></i> Formular zurücksetzen</button>
+						<div style="margin-top: 2em">
+							<p><strong>Datenschutzhinweis: </strong>Die Formulardaten werden per E-Mail an den Landesvorstand geschickt und bei Annahme gespeichert und an den E-Mail-Administrator weitergegeben. Alle in diesen Prozess eingebundenen Personen sind auf die Einhaltung der entsprechenden Datenschutzrichtlinien verpflichtet. Falls du Fragen zum Datenschutz hast, kannst du dich an den <a href="http://wiki.piratenpartei.de/MV:Datenschutzbeauftragter">Datenschutzbeauftragten</a> wenden.</p>
+						</div>
+					</div>
+				</div>
+
+	</form>
+</div>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="email.js"></script>
+		
+</body>
+
+</html>
