@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Meldung von Zugangsproblemen bei Liquid Feedback</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<link href="assets/css/form_style.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<body>
+	<div class="container-fluid">
+
+		<form method="post" action="forms/liquidfeedback.php" id="contact-form">
+
+			<div class="row-fluid">
+
+				<div class="span9">
+
+					<div class="page-header">
+						<h1>Meldung von Zugangsproblemen bei Liquid Feedback</h1>
+					</div>
+
+					<p class="lead">Über dieses Formular kannst du Probleme beim Zugang zur <a href="https://lqfb.piratenpartei.de">Bundesinstanz von Liquid Feedback</a> melden. Wir werden deine Meldung an den entsprechenden Support weiterleiten.</p>
+
+					<fieldset>
+						<legend>Über dich</legend>
+						
+						<div class="control-group form-horizontal">
+							<label class="control-label" for="form_name">Name</label>
+							<div class="controls">
+								<input type="text" name="name" id="form_name" class="input-xxlarge" placeholder="Max Musterpirat">
+								<span class="help-block">
+									<p>Gib bitte deinen vollständigen Namen an. Um dir bei deinem Problem zu helfen, muss dein Name in der Mitgliederdatenbank gesucht werden – dort stehen keine Pseudonyme oder Nicknames.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<label class="control-label" for="form_email">E-Mail-Adresse</label>
+							<div class="controls">
+								<input type="text" name="email" id="form_email" class="input-xxlarge" placeholder="m.musterpirat@provider.net">
+								<span class="help-block">
+									<p>Wir benötigen deine E-Mail-Adresse, damit wir uns bei Rückfragen bei dir melden können. Du bekommst weiterhin eine Kopie deiner Support-Anfrage zugeschickt.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<label class="control-label">Mitgliedschaft</label>
+							<div class="controls">
+								<select name="unit" id="form_unit" class="input-xxlarge">
+									<option value="">(bitte auswählen)</option>
+									<option>Landesverband Baden‑Württemberg</option>
+									<option>Landesverband Bayern</option>
+									<option>Landesverband Berlin</option>
+									<option>Landesverband Brandenburg</option>
+									<option>Landesverband Bremen</option>
+									<option>Landesverband Hamburg</option>
+									<option>Landesverband Hessen</option>
+									<option>Landesverband Mecklenburg‑Vorpommern</option>
+									<option>Landesverband Niedersachsen</option>
+									<option>Landesverband Nordrhein‑Westfalen</option>
+									<option>Landesverband Rheinland‑Pfalz</option>
+									<option>Landesverband Saarland</option>
+									<option>Landesverband Sachsen</option>
+									<option>Landesverband Sachsen‑Anhalt</option>
+									<option>Landesverband Schleswig‑Holstein</option>
+									<option>Landesverband Thüringen</option>
+									<option>Bundesverband</option>
+									<option>Ausland</option>
+								</select>
+								<span class="help-block">
+									<p>Nur Mitglieder erhalten Zugang zu Liquid Feedback. Du kannst über den <a href="https://www.piratenpartei.de/mitmachen/mitglied-werden/">Online-Mitgliedsantrag</a> Mitglied werden.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<div class="controls">
+								<label class="checkbox" for="form_confirmed">
+									<input name="confirmed" class="checkbox" type="checkbox" id="form_confirmed"> Ich habe von der Mitgliederverwaltung eine Bestätigung meiner Mitgliedschaft per E-Mail bekommen.
+								</label>
+								<span class="help-block">
+									<p>Deine Mitgliedschaft beginnt erst, wenn du den ersten Jahresbeitrag überwiesen hast und dies vom Generalsekretär bestätigt wurde. Falls du schon bezahlt hast, aber noch keine Bestätigung bekommen hast, <a href="http://www.piratenpartei.de/kontakt/">melde dich bitte bei deiner Mitgliederverwaltung</a>.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<label class="control-label" for="form_number">Mitgliedsnummer</label>
+							<div class="controls">
+								<input type="text" name="number" id="form_number" class="input-xxlarge" placeholder="12345">
+								<span class="help-block">
+									<p>Durch Angabe der Mitgliedsnummer kannst du schneller in der Mitgliederdatenbank gefunden werden. Falls du deine Mitgliedsnummer nicht weißt, trag bitte in das Feld deine Anschrift ein.</p>
+								</span>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Problembeschreibung</legend>
+
+						<div class="control-group form-horizontal">
+							<label class="control-label">Einladungscode</label>
+							<div class="controls">
+								<label class="checkbox" for="form_nocode">
+									<input name="nocode" class="checkbox" type="checkbox" id="form_nocode"> Ich habe keinen Einladungscode erhalten.
+								</label>
+								<span class="help-block">
+									<p>Generell werden Neueinladungen immer am ersten Dienstag des Monats verschickt. Bitte beachte, dass der Einladungscode an die in der Mitgliederdatenbank hinterlegte E-Mail-Adresse verschickt wird. Sollte diese nicht mehr aktuell sein, <a href="http://www.piratenpartei.de/kontakt/">melde dich bitte bei deiner Mitgliederverwaltung</a>. Achte weiterhin darauf, dass die E-Mail im Spamfilter hängenbleiben könnte und dass dein Account genügend Speicherplatz für eingehende E-Mails hat (dieses Problem tritt häufig bei web.de-Adressen auf).</p>
+								</span>
+							</div>
+						</div>
+						<div class="control-group form-horizontal">
+							<div class="controls">
+								<label class="checkbox" for="form_wrongcode">
+									<input name="wrongcode" class="checkbox" type="checkbox" id="form_wrongcode"> Mein Einladungscode funktioniert nicht.
+								</label>
+								<span class="help-block">
+									<p>Für den Registrierungsprozess müssen Cookies erlaubt sein. In seltenen Fällen war der Browser problematisch, dann einen anderen verwenden (<a href="http://www.mozilla.org/de/firefox/new/">Firefox</a> funktioniert). Bitte überprüfe sicherheitshalber, ob du den Einladungscodes nicht evtl. bei der falschen Instanz einzugeben versuchst.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<label class="control-label">Anmeldename</label>
+							<div class="controls">
+								<label class="checkbox" for="form_nologin">
+									<input name="nologin" class="checkbox" type="checkbox" id="form_nologin"> Ich habe meinen Anmeldenamen vergessen.
+								</label>
+								<span class="help-block">
+									<p>Der Anmeldenamen muss nicht notwendigerweise mit dem in Liquid Feedback angezeigten Namen übereinstimmen. Bitte überprüfe sicherheitshalber, ob du den Anmeldenamen nicht evtl. bei der falschen Instanz einzugeben versuchst.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<label class="control-label">Passwort</label>
+							<div class="controls">
+								<label class="checkbox" for="form_nopass">
+									<input name="nopass" class="checkbox" type="checkbox" id="form_nopass"> Ich habe mein Passwort vergessen.
+								</label>
+								<span class="help-block">
+									<p>Du kannst <a href="https://lqfb.piratenpartei.de/lf/index/reset_password.html">über dieses Formular</a> einen Link zum Rücksetzen deines Passwortes anfordern.</p>
+								</span>
+							</div>
+						</div>
+						<div class="control-group form-horizontal">
+							<div class="controls">
+								<label class="checkbox" for="form_passreset">
+									<input name="passreset" class="checkbox" type="checkbox" id="form_passreset"> Ich habe mein Passwort zurücksetzen lassen, jedoch noch keine E-Mail bekommen.
+								</label>
+								<span class="help-block">
+									<p>Bitte beachte, dass das Passwort an die in deinem Liquid Feedback-Account hinterlegte E-Mail-Adresse verschickt wird. Achte weiterhin darauf, dass die E-Mail im Spamfilter hängenbleiben könnte und dass dein Account genügend Speicherplatz für eingehende E-Mails hat (dieses Problem tritt häufig bei web.de-Adressen auf).</p>
+								</span>
+							</div>
+						</div>
+						<div class="control-group form-horizontal">
+							<div class="controls">
+								<label class="checkbox" for="form_wrongpass">
+									<input name="wrongpass" class="checkbox" type="checkbox" id="form_wrongpass"> Mein Passwort funktioniert nicht mehr.
+								</label>
+								<span class="help-block">
+									<p>Bitte überprüfe sicherheitshalber, ob du das Passwort nicht evtl. bei der falschen Instanz einzugeben versuchst.</p>
+								</span>
+							</div>
+						</div>
+
+
+						<div class="control-group form-horizontal">
+							<label class="control-label" for="form_description">Sonstige Probleme</label>
+							<div class="controls">
+								<textarea rows="10" name="description" id="form_description" class="input-xxlarge" placeholder="Was funktioniert nicht? Was hast du versucht? Was hast du erwartet? Was ist stattdessen passiert? Tritt das Problem ständig auf?"></textarea>
+								<span class="help-block">
+									<p>Falls notwendig, beschreibe dein Problem noch genauer.</p>
+								</span>
+							</div>
+						</div>
+
+						<div class="control-group form-horizontal">
+							<div class="controls">
+								<label class="checkbox" for="form_accept">
+									<input name="accept" class="checkbox" type="checkbox" id="form_accept"> Ich habe die Hinweise auf diesem Formular gelesen und bin mir sicher, dass mein Problem tatsächlich etwas mit Liquid Feedback und nichts mit meiner Mitgliedschaft oder meiner E-Mail-Adresse zu tun hat.
+								</label>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary"><i class="icon-envelope icon-white"></i> Problem melden</button>
+						<button type="reset" class="btn"><i class="icon-repeat"></i> Formular zurücksetzen</button>
+						<div style="margin-top: 2em">
+							<p><strong>Datenschutzhinweis: </strong>Die Formulardaten werden per E-Mail an den jeweiligen Support weitergeleitet und nicht auf den Servern des Landesverbandes Mecklenburg-Vorpommern der Piratenpartei gespeichert. Alle in den Support eingebundenen Personen sind auf die Einhaltung der entsprechenden Datenschutzrichtlinien verpflichtet. Falls du Fragen zum Datenschutz hast, kannst du dich an den <a href="http://wiki.piratenpartei.de/MV:Datenschutzbeauftragter">Datenschutzbeauftragten</a> wenden.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="span3">
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<script src="assets/js/jquery-1.7.1.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="liquidfeedback.js"></script>
+</body>
+
+</html>
