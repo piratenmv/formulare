@@ -74,7 +74,7 @@ Diese E-Mail wurde automatisch über das Formular %s generiert. Rückfragen zu d
 $body = sprintf($format, $_REQUEST['name'], $_REQUEST['unit'], $problem, $_REQUEST['name'], $_REQUEST['unit'], $_REQUEST['email'], $_REQUEST['number'], $_REQUEST['unit'], $_REQUEST['name'], $_SERVER['HTTP_REFERER']);
 
 // create the mail
-$subject = "Probleme beim Zugang zum Liquid Feedback";
+$subject = "Probleme beim Zugang zum Liquid Feedback (" . $_REQUEST['name'] . ")";
 $mail_from = "Piraten MV Support <support@piraten-mv.de>";
 $mail_to = "Liquid Feedback Support <support@lqfb.piratenpartei.de>";
 
